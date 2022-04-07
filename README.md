@@ -11,3 +11,4 @@ A discord bot template using kiws bot api.
 
 # How do I run this?
 > ```python3 bot.py```(must have python installed), and you can also run this on replit.
+> Don't forget to install the requirements, run ```pip install -r requirements.txt```
