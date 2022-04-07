@@ -35,19 +35,6 @@ async def user(ctx,*,name):
 
 
 
-@bot.command()
-async def hashtag(ctx,*,hashtag):
- try: 
-    api = requests.get(f'https://api.kiwbot.org/tag/{hashtag}')
-    tag = api.json()['challenge']
-    em = discord.Embed(title=f"{tag['title']}",discription=f"{tag['desc']}")
-    em.add_field(name="")
- except KeyError as error:
-   em = Embed(description="Please try again this hashtag does not exist, or something went wrong")
-   await ctx.send(embed=em)
-
-
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
